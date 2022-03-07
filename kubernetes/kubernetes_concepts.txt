@@ -1,0 +1,69 @@
+What is Kubernetes?
+--------------------
+Kubernetes is an open-source platform used to automate deployment and to scale containers across clusters of hosts providing container-centric infrastructure.
+It is a container orchestrator.
+It can run a Linux container.
+  Launches a container
+  Maintains and monitors the container site
+  Performs container-oriented networking
+
+Key Concepts
+------------
+Now, let’s discuss the key points of this architecture.
+---------------------------------------------------------------------------------------------------
+Pod:                      Group of containers
+Label:                    Used to identify pods
+Kubelet:                  Container agents, responsible for maintaining the set of pods
+Proxy:                    The load balancer for pods, helping in distributing tasks across them
+Etcd:                     A metadata service
+CAdvisor:                 Used for monitoring resource usage and performance
+Replication controller:   Manages pod replication
+Scheduler:                Used for pod scheduling in worker nodes
+API server:               Kubernetes API server
+---------------------------------------------------------------------------------------------------
+
+etcd:
+-----
+It is a distributed reliable key-value store used by kubernetes to store all data used to manage the cluster
+
+Scheduler:
+----------
+Scheduler is responsible for distributing work or containers across multiple nodes.
+
+Container Runtime:
+------------------
+It is framework that is responsible for running application in containers like Docker
+
+
+Replication Controller:
+-----------------------
+
+
+Replica Sets:
+-------------
+
+
+Deployment:
+-----------
+
+
+Service Types:
+--------------
+NodePort:
+---------
+  *.  A NodePort service is the most primitive way to get external traffic directly to your service.
+  *.  NodePort, as the name implies, opens a specific port on all the Nodes (the VMs), and any traffic that is sent to this port is forwarded to the service.
+  *.  This service runs within Kubernetes Node.
+  *.  Port Range: 30000-32767
+
+ClusterIP:
+----------
+  *.  A ClusterIP service is the default Kubernetes service created, when type is not explicitly mentioned in service definition yaml file. 
+  *.  It gives you a service inside your cluster that other apps inside your cluster can access. 
+  *.  There is no external access.
+
+LoadBalancer:
+-------------
+  *.  A LoadBalancer service is the standard way to expose a service to the internet.
+  *.  On GKE, this will spin up a Network Load Balancer that will give you a single IP address that will forward all traffic to your service
+

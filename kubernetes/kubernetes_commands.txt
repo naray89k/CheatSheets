@@ -1,0 +1,171 @@
+kubectl --help
+kubectl version
+kubectl config view
+kubectl config use-context docker-desktop
+kubectl version
+kubectl config --help
+kubectl config current-context
+kubectl config view
+kubectl version
+kubectl run my-nginx --image nginx
+kubectl get pods
+kubectl get all
+kubectl delete deployment my-nginx
+kubectl delete my-nginx
+kubectl delete pod my-nginx
+kubectl --help
+kubectl run my-nginx --image nginx
+kubectl delete pod my-nginx
+kubectl run my-apache --image apache
+kubectl get all
+kubectl get nodes
+kubectl get pods
+
+kubectl version --client
+kubectl version
+kubectl cluster-info
+curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
+sudo install minikube-linux-amd64 /usr/local/bin/minikube
+kubectl cluster-info
+minikube start
+kubectl cluster-info
+kubectl config view
+kubectl version
+minikube --help
+minikube status
+minikube version
+kubectl version
+kubectl config view
+kubectl get nodes
+kubectl expose deployment hello-minikube --type=NodePort --port=8080
+kubectl get deployments
+kubectl get all
+minikube service hello-minikube --url
+kubectl delete services hello-minikube
+kubectl get all
+kubectl delete deployment hello-minikube
+kubectl get all
+kubectl run nginx --image=nginx:latest
+kubectl get pods
+kubectl describe pod nginx
+kubectl get pods
+kubectl get pods
+kubectl delete pod
+kubectl delete pods nginx
+kubectl get pods
+kubectl get all
+kubectl create -f pod-definition.yml
+kubectl get all
+kubectl get pods
+kubectl describe pod myapp-pod
+kubectl delete -f pod-definition.yml
+kubectl get pods
+kubectl apply -f demo-pod.yml
+kubectl get pods
+kubectl describe pod nginx
+kubectl delete -f demo-pod.yml
+kubectl create -f kub_nginx.yml
+kubectl delete -f kub_nginx.yml
+kubectl create -f rc-definition.yml
+kubectl get replicationcontroller
+kubectl get all
+kubectl delete -f rc-definition.yml
+kubectl create -f rs-definition.yml
+kubectl delete -f rs-definition.yml
+kubectl get all
+kubectl create -f rc-definition.yml
+kubectl get all
+kubectl create -f rs-definition.yml
+kubectl get all
+kubectl replace -f rs-definition.yml
+kubectl get all
+kubectl get pods
+kubectl get replicaset
+kubectl get replicationcontrolller
+kubectl get replicationcontroller
+kubectl delete replicaset myapp-replicaset
+kubectl get replicationcontroller
+kubectl get replicaset
+kubectl replace -f rs-definition.yml
+kubectl get replicaset
+kubectl create -f rs-definition.yml
+kubectl get replicaset
+kubectl get all
+kubectl get replicaset
+kubectl get replicacontroller
+kubectl get replicationtroller
+kubectl get replicationcontroller
+kubectl delete replicationcontroller myapp-rc
+kubectl get all
+kubectl delete pod myapp-replicaset-8mfw8
+kubectl get replicaset
+kubectl get pods
+kubectl get replicaset
+kubectl create -f pod-definition.yml
+kubectl get pods
+kubectl get replicaset
+kubectl edit replicaset myapp-replicaset
+kubectl get replicaset
+kubectl get pods
+kubectl get replicaset
+kubectl delete replicaset myapp-replicaset
+kubectl version --help
+kubectl version --client
+kubectl version --client=false
+kubectl version --client=true
+kubectl version --client=false
+history | grep -E "kubectl|minikube"
+
+========================================
+            5-MARCH-2022
+========================================
+kubectl get all
+kubectl create -f deployment.yml
+kubectl get deployments
+kubectl get all
+kubectl delete -f deployment.yml
+kubectl get all
+kubectl create -f deployment.yml
+kubectl get deployments
+kubectl get all
+kubectl describe deployment myapp-deployment
+kubectl --help
+kubectl get pods
+kubectl get replicasets
+kubectl get deployments
+kubectl get pods
+kubectl describe pod myapp-deployment-6ffd468748-529nv
+kubectl get pods
+kubectl scale deployment --help
+kubectl scale deployment --replicas=1
+kubectl scale deployment --replicas=1 myapp-deployment
+kubectl get replicasets
+kubectl scale deployment --replicas=3 myapp-deployment
+kubectl get replicasets
+kubectl get pods
+kubectl create deployment http-frontend --image=httpd:2.4-alpine
+kubectl get deployments
+kubectl scale deployment --replicas=3 http-frontend
+kubectl get deployments
+kubectl rollout status deployment/myapp-deployment
+kubectl rollout history deployment/myapp-deployment
+kubectl apply -f deployment.yml
+kubectl rollout history deployment/myapp-deployment
+kubectl describe deployment deployment/myapp-deployment
+kubectl describe deployment myapp-deployment
+kubectl get deployments
+kubectl rollout undo deployment/myapp-deployment
+kubectl rollout history deployment/myapp-deployment
+kubectl rollout status deployment/myapp-deployment
+kubectl rollout status --help
+kubectl rollout status deployment/myapp-deployment
+kubectl rollout status -R deployment/myapp-deployment
+kubectl delete deployment myapp-deployment
+kubectl rollout status --help
+kubectl get pods
+kubectl create -f deployment.yml --record
+kubectl decribe deployment myapp-deployment
+kubectl describe deployment myapp-deployment
+kubectl --help
+kubectl completion bash
+kubectl config view
